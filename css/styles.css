@@ -1,20 +1,19 @@
 * {
     box-sizing: border-box;
     font-family: 'Piazzolla', serif;
-    font-size: 20px;
 }
 
 body {
     margin: 0;
 }
 
-
-/* Style the header */
-
 .header {
-    background-color: lightblue;
-    padding: 20px;
+    background-image: url('../img/pexels-tom-swinnen-1309766.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
     text-align: center;
+    color: white;
 }
 
 .header h1 {
@@ -25,23 +24,21 @@ body {
     font-size: 40px;
 }
 
-
-/* Create three equal columns that floats next to each other */
-
-.column {
+.one-column {
     float: left;
     width: 100%;
     padding: 20px 20% 0 20%;
     padding: 0-20%;
 }
 
-.column h2 {
-    color: green;
+.one-column h1,
+h2 {
     text-align: center;
 }
 
-
-/* Clear floats after the columns */
+#cadetblue {
+    background-color: cadetblue;
+}
 
 .row:after {
     content: "";
@@ -49,26 +46,26 @@ body {
     clear: both;
 }
 
+.two-column {
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
 
-/*Image Gallery*/
-
-.gallery {
+.three-column {
     padding: 20px;
     float: left;
     width: 33.33%;
 }
 
-.gallery img {
+.three-column img {
     width: 100%;
 }
 
-.gallery .desc {
-    padding: 15px;
+.three-column .desc {
+    padding: 10px;
     text-align: center;
 }
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width:600px) {
     .column {
